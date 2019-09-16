@@ -32,4 +32,9 @@ public class MemberRestController {
     public Member findById(@PathVariable Long memId){
         return service.getMember(memId);
     }
+
+    /*@DeleteMapping("/deleteMember/{memId}")
+    public void deleteMember(@PathVariable Long memId) {
+        service.deleteById(memId);
+    }*/
 }
